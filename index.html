@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Hari Om</title>
+  <!--Favicons-->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://hariomgolds.com/uj.png" />
+  <meta name="description" content="Hari Om, a premier gold jewelry manufacturer in Chennai, captivates discerning individuals with their exceptional 
+ollection of exquisite gold ornaments. Renowned for their unwavering commitment to quality craftsmanship and artistic finesse,
+Hari Om showcases a wide array of opulent gold jewelry pieces. From intricately designed necklaces and bracelets to resplendent rings and earrings, each creation exudes timeless elegance and allure. 
+Indulge in the mesmerizing world of Hari Om, where tradition intertwines with contemporary aesthetics, and experience the embodiment of luxurious craftsmanship. 
+Elevate your style with Hari Om, the epitome of sophistication and beauty in Chennai's gold jewelry landscape. " />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+  <!--Bootstrap and Other Vendors-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css"
+    integrity="sha512-c7jR/kCnu09ZrAKsWXsI/x9HCO9kkpHw4Ftqhofqs+I2hNxalK5RGwo/IAhW3iqCHIw55wBSSCFlm8JP0sw2Zw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet" />
+  <!--Mechanic Styles-->
+  <link rel="stylesheet" href="css/style.css?v=1712386159" />
+  <!--<link rel="stylesheet" href="css/responsive.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <style>
+    #header .navbar #mainNav .nav li a {
+      font-weight: 600;
+    }
+
+    /* PRELOADER CSS */
+    .page-loader {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      background: #272727;
+      z-index: 100001;
+    }
+
+    .img-watermark::after {
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(images/hmlogo.png) no-repeat;
+      background-size: contain;
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    .txt {
+      color: #666;
+      text-align: center;
+      top: 40%;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    /* SPINNER ANIMATION */
+    .spinners {
+      position: relative;
+      top: 35%;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      background-color: #fff;
+
+      border-radius: 100%;
+      -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+      animation: sk-scaleout 1s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0);
+      }
+
+      100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    #header .logo_line .searchSec .wishlistCompare .nav li a {
+      color: #ffd742;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="root"></div>
+  
+  
+  <!--jQuery, Bootstrap and other vendor JS-->
+  <!--jQuery-->
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <!--Google Maps-->
+  <!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
+  <!--Bootstrap JS-->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!--Owl Carousel-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Isotope-->
+  <script src="vendors/isotope/isotope-custom.js"></script>
+  <!--FlexSlider-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"
+    integrity="sha512-BmoWLYENsSaAfQfHszJM7cLiy9Ml4I0n1YtBQKfx8PaYpZ3SoTXfj3YiDNn0GAdveOCNbK8WqQQYaSb0CMjTHQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Hari Om JS-->
+  
+  <script>
+    $(document).ready(function () {
+      // $(".js-example-basic-single").select2();
+      $("#page-loader").hide();
+    });
+  </script>
+  <script type="module" src="/main.jsx"></script>  
+  <script src="js/nivs.js"></script>
+  <script src="js/main.js?v=1712386169"></script>
+</body>
+
+</html>
