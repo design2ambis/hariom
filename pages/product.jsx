@@ -63,10 +63,10 @@ const Product = () => {
         const data = await response.json();
         if (data.status === true) {
           Swal.fire({
-            title: "Added",
-            text: "successfully",
-            icon: "success",
-          }).then(() => {
+            title: 'Added',
+            text: 'successfully',
+            icon: 'error'
+          }).then(()=>{
             location.reload();
           });
         } else {
