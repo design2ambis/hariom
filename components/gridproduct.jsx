@@ -72,11 +72,11 @@ const Gridproduct = (props) => {
                             <i className="fas fa-heart"></i>
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="#">
                             <i className="fas fa-shopping-cart-alt"></i>
                           </a>
-                        </li>
+                        </li> */}
                         <li>
                           <a href="#">
                             <i className="fas fa-expand"></i>
@@ -100,9 +100,9 @@ const Gridproduct = (props) => {
                 <div className="row m0 proName">
                   <Link to={`/product/${pro.no}`}> {pro.no} </Link>
                 </div>
-                <div className="row m0 proBuyBtn">
+                {/* <div className="row m0 proBuyBtn">
                   <button className="addToCart btn">add to cart</button>
-                </div>
+                </div> */}
                 {/* <center>
                   <label for="proid<?php echo $list['id'] ?>">
                     <input type="checkbox" id="" /> Add to cart
