@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Product = () => {
-  const { prono } = useParams();
+  const { prono } = useParams([]);
   const [product, setproduct] = useState([]);
   const [image, setImage] = useState([]);
 
