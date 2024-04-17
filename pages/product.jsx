@@ -72,7 +72,7 @@ const Product = () => {
           Swal.fire({
             title: 'Added',
             text: 'successfully',
-            icon: 'error'
+            icon: 'success'
           }).then(()=>{
             location.reload();
           })
